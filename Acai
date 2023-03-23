@@ -1,0 +1,21 @@
+public class Acai  {
+    public String Tamanho;
+    public Double valor;
+    public Boolean acrescimoSorverte;
+
+    public Double CalculaValor(Boolean acrescimoSorverte, String tamanho) {
+        if (Tamanho.equals("p")) {
+            valor = 8.0;
+
+        } else if (Tamanho.equals("M")) {
+            valor = 10.0;
+
+        } else {
+            valor = 12.0;
+        }
+        if (acrescimoSorverte) {
+            valor += 2.0;
+        }
+        return null;
+    }
+}
