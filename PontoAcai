@@ -1,0 +1,19 @@
+import javax.swing.*
+import java.awt.*;
+
+public class PontoAcai {
+    public static void main (String[]args ){
+        String opcao = JOptionPane.showInputDialog("Ponto do Açai");
+        String desejaSorvete = JOptionPane.showInputDialog("Deseja sorvete");
+        Acai acai = new Acai();
+        Boolean acrescimoSorvete;
+        if(desejaSorvete.equals(("S")) {
+            acrescimoSorvete = true;
+        }else{
+                acrescimoSorvete = false;
+            }
+          double valorTotal =   acai.CalculaValor(acrescimoSorvete,Tamanho);
+        JOptionPane.showMessageDialog(null, "O valor é" + valorTotal );
+
+    }
+}
